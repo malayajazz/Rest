@@ -190,12 +190,35 @@ color: #333333;
 /* menu style end */
 
 
+/* testimony style start */
+.testimony-hero {
+  position: relative;
+}
 
-
-
-
-/* hero style start */
-/* hero style end */
+.testimony-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transform: translate(-50%, -50%);
+/* 
+adding top/left of 50% moves the top/left margin edge of the element to 
+the middle of the parent, and transiate() function with the (negative) 
+value of -50% moves the element by the half of its size. Hence the element
+will be positioned at the middle */
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 1.4rem;
+  width: 80%;
+  height: 100%;
+  font-weight: lighter;
+}
+.testimony-quote {
+  font-size: 6rem;
+}
+/* testimony style end */
 
 @media screen and (min-width: 725px) {
 
